@@ -1,0 +1,563 @@
+/* kotacademy.css */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-lapse: collapse;
+	border-spacing: 0;
+}
+
+/* Start of my CSS */
+
+* {
+   box-sizing: border:box;
+}
+
+body {
+  font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: #404040;
+}
+
+h1 {
+  color: #137cb9;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #137cb9;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 30px;
+}
+
+/* Header */
+
+header {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url("https://cdn-images-1.medium.com/max/1943/1*x-fNsb1mmwwptgJoJGDvPA.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Pasek menu*/
+
+.menu {
+  background-color: white;
+  height: 70px;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  padding-left: 50px;
+  padding-right: 10px;
+  float: left;
+  height: 70px;
+}
+
+.bookmarks {
+  float: right;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 50px;
+  margin-top: 25px;
+}
+.inline {
+  display: inline;
+}
+.pointer {
+  cursor: pointer;
+}
+.menu-link { 
+  color: #137cb9;
+  text-decoration: none;
+  padding: 20px;
+}
+ a:hover {  
+  color: #f47421;
+  text-decoration: none;
+}
+.bookmarks .icon {
+  display: none;
+}
+.icon {
+  color: #137cb9
+}
+
+/* banner */
+
+.banner {
+  color: #FFFFFF; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.banner h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.80);
+  color: white;
+  font-size: 72px;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 15px;
+  line-height: 1;
+}
+
+.banner h3 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.80);
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
+
+.banner span {
+  color: #f47421;
+}
+
+/* sections */
+
+section {
+  position: relative;
+  background-color: #e7ecef;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.content {
+  margin: 0px auto;
+  max-width: 989px;
+  padding: 40px 50px 30px 50px;
+  text-align: center;
+}
+
+/* columns */
+
+.columns {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.column {
+padding: 40px 35px 30px 35px;
+}
+
+section.offer .fas, section .far {
+  font-size: 50px;
+  padding-bottom: 20px;
+  color: #137cb9;
+}
+
+.button {
+    border-radius: 10px;
+    border: solid 2px #f47421;
+    color: #f47421;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {  
+  border-color: #137cb9;
+  color: #137cb9;
+  text-decoration: none;
+}
+
+/* Section workshop */
+
+section.workshop .content {
+    position: relative;
+    min-height: 500px;
+    padding: 80px;
+}
+
+.gradient {
+    position: absolute;
+    background: linear-gradient(to right, #137cb9, #389fd9, #389fd9, #137cb9);
+    height: 60%;
+    -webkit-transition: all 150ms linear;
+    -webkit-transform: skewY(-5deg);width: 100%;
+}
+
+section.workshop .content h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.63); 
+}
+
+section.workshop .content h3 {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.63); 
+    margin-bottom: 40px;
+}
+
+.workshop-table {
+    border-radius: 3px;
+    background-color: #e7ecef;
+    box-shadow: 1px 1px 4px #cacaca;
+    margin: auto;
+    padding: 25px;
+    position: relative;
+    max-width: 800px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+.workshop-description {
+    border-right: 1px solid #137cb9;
+    padding: 0px 30px 0px 0px;
+    flex: 1 1;
+}
+
+.kotlin-logo {
+    max-width: 150px;
+    margin: auto;
+}
+
+.workshop-description p {
+  margin-bottom: 0px;
+  padding-top: 25px;
+}
+
+  .workshop-table .list {
+    padding-left: 40px;
+    text-align: left;
+    list-style-type: disc;
+    flex: 1 1;
+    align-self: center;
+}
+
+.workshop-table ul li {
+  margin: 10px;
+}
+
+/*Section trainer */
+section.trainer {
+  background: linear-gradient(to right, rgb(19, 124, 185, 0.6), #e7ecef);
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+
+section.trainer .content {
+  margin: 0px auto;
+  max-width: 989px;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0px 80px 0px 80px;
+}
+
+section.trainer .img {
+    flex: 1;  
+    align-self: center;
+}
+
+section.trainer img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 50%;
+}
+
+section.trainer .text {
+  padding: 100px 0px 100px 50px;
+  align-self: center;
+  flex: 1;
+  text-align: right;
+}
+
+section.trainer h1 {
+  margin-bottom: 0px;
+}
+
+section.trainer h3 {
+  margin-bottom: 20px;
+}
+
+section.trainer p {
+  margin: 20px 0px 0px 0px;
+}
+
+section.trainer .fab, section.trainer .fas {
+  padding-left: 5px;
+  color: black;
+}
+
+section.trainer .fab:hover, section.trainer .fas:hover {
+  color: #137cb9;
+}
+
+/*section videos - nieużywana 
+
+section.videos  {
+  padding-top: 0px;
+}
+
+section.videos .content {
+  diplay: flex;
+  flex-flow: row nowrap;
+  padding: 0px;
+}
+
+section.videos iframe {
+  margin-left: 21px;
+  margin-right: 21px;
+}
+*/
+
+/* section contact*/
+
+section.contact {
+  background: #e7ecef;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+section.contact .button {
+  margin-top: 20px;
+}
+
+/* footer */
+footer {
+  background-color: white;
+}
+
+footer .content {
+  padding: 15px 80px 15px 80px;
+}
+
+footer .content p {
+  padding: 0px;
+  margin: 0px;
+  font-size: 12px;
+}
+
+footer p a {
+  color: gray;
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+/*RWD CSS*/
+
+@media screen and (max-width: 1000px) {
+  section.trainer .content {
+    flex-flow: column wrap;
+    padding-top: 60px;
+  }
+
+  .column {
+padding: 40px 25px 30px 25px;
+}
+  
+  section.trainer img {
+    max-width: 70%;
+    height: auto;
+}
+  
+  section.trainer .text {
+    text-align: center;
+    padding: 50px 50px 50px 50px;
+  }
+
+ .kotlin-logo {
+    max-width: 100px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .columns {
+    flex-flow: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner h1 {
+    font-size: 48px;
+  }
+  .banner h3 {
+    font-size: 23px;
+  }
+  
+  section h1 {
+    font-size: 40px;
+  }
+  
+  section h3 {
+    font-size: 20px;
+  }
+  
+  p, li { 
+    font-size: 16px;
+  }
+
+  .workshop-table {
+    flex-direction: column;
+  }
+  
+  .workshop-description {
+    border-right: 0px;
+    border-bottom: 1px solid #137cb9;
+    padding: 0px 0px 30px 0px;
+  }
+  
+  .workshop-table .list {
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+  
+  .button {
+      border: solid 2px #f47421;
+      padding: 10px 21px;
+  }
+  
+  section.trainer .content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  section.trainer img {
+    max-width: 60%;
+    height: auto;
+}
+  
+  section.trainer .text {
+    padding-top: 30px;
+  }
+  
+  section.contact .button {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .bookmarks a {display: none;}
+  .bookmarks a.icon {
+    float: right;
+    display: block;
+  } 
+  
+  .bookmarks.responsive {
+    position: relative;
+    background-color: white;
+    border-bottom-left-radius: 10%;
+    padding: 0px 0px 15px 0px;
+  }
+  .bookmarks.responsive .icon {
+    position: absolute;
+    right: 50px;
+    top: 0;
+  }
+  .bookmarks.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }  
+   .home { 
+    padding-top: 30px;  
+  }
+  .menu-link {
+    font-size: 12px;
+    padding-bottom: 0px;
+  }
+  
+  section h1 {
+    font-size: 30px;
+  }
+  
+  section h3 {
+    font-size: 20px;
+  }
+}  
+  
+@media screen and (max-width: 450px) {
+  .banner h1 {
+    font-size: 40px;
+  }
+  .banner h3 {
+    font-size: 20px;
+  }
+  
+  p, li { 
+    font-size: 15px;
+  }
+
+.button {
+      font-size: 15px;
+  } 
+
+  section.workshop .content {
+     padding: 60px;
+  }
+  
+  footer .content {
+  padding: 15px 30px 15px 30px;
+}
+}
+
+@media screen and (max-width: 360px) {
+  .logo { padding-left: 10px;}
+   section.workshop .content {
+     padding: 40px;
+  } 
+     section.offer .column {
+       padding: 20px 0px 20px 0px;
+     }
+  
+  section.trainer .content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
